@@ -19,5 +19,5 @@ player_count = players.count()[0]
 players_df = pd.DataFrame({"Total Players": [player_count]})
 players_df
 
-![]https://github.com/poonam-ux/Pandas-Challenge_Video-game-purchase-data/blob/main/HeroesOfPymoli/Images/Total%20Players.png
+![](Images/Total%20Players.png)
 
