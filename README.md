@@ -274,3 +274,11 @@ profitable_item = item_table2[["Purchase Count", "Item Price", "Total Purchase V
 profitable_item.head(5)
 ```
 ![](https://github.com/poonam-ux/Pandas-Challenge_Video-game-purchase-data/blob/main/HeroesOfPymoli/Images/Most%20Profitable%20Items.png)
+
+## Observable Trends
+
+* Male players are the dominating gender category with 84% count and 82.68% purchase value.
+* The female count is smaller, but they spent more amount per item ( Average Purchase Price) than male players.
+* Over 44% players fall under the age group “20-24” with Total Purchase Value of $ 1114 (46.8% of sales)
+* “Final Critic” is the most popular and most profitable game, followed by “Oathbreaker, Last Hope of the Breaking Storm”. They both were purchased the most.
+* Top spenders spent around $3.80 per game for total purchase between $15 and $19 each.
