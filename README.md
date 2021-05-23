@@ -10,6 +10,7 @@ The final report should include each of the following:
 
 ### Player Count
 * Total Number of Players
+
 ```python
 # Total number of players
 players = purchase_data.loc[:, ["Gender", "SN", "Age"]]
@@ -27,6 +28,7 @@ players_df
 * Average Item Price
 * Total Number of Purchases
 * Total Revenue
+
 ```python
 # Number of Unique Items
 item_count = len(purchase_data["Item ID"].unique())
@@ -62,6 +64,7 @@ purchase_table
 * Percentage and Count of Male Players
 * Percentage and Count of Female Players
 * Percentage and Count of Other / Non-Disclosed
+
 ```python
 # Total count and percentage of players based on gender
 gender_count = players["Gender"].value_counts()
@@ -85,6 +88,7 @@ The below each broken by gender
 * Average Purchase Price
 * Total Purchase Value
 * Average Purchase Total per Person by Gender
+
 ```python 
 # Purchase count of Male and Female players
 purchase_count_gender = purchase_data.groupby(["Gender"]).count()["Price"].rename("Purchase Count")
@@ -118,6 +122,7 @@ purchasing_gender
 The below each broken into bins of 4 years (i.e. <10, 10-14, 15-19, etc.)
 * Total Count
 * Percentage of Players
+
 ```python 
 # Figure Out Minimum and Maximum Ages
 # print(purchase_data["Age"].max())
@@ -156,6 +161,7 @@ The below each broken into bins of 4 years (i.e. <10, 10-14, 15-19, etc.)
 * Average Purchase Price
 * Total Purchase Value
 * Average Purchase Total per Person by Age Group
+
 ```python
 #Create bins and group names for ages
 age_bins = [0, 9.99, 14.99, 19.99, 24.99, 29.99, 34.99, 39.99, 999]
@@ -192,6 +198,7 @@ Identify the the top 5 spenders in the game by total purchase value, then list (
 * Purchase Count
 * Average Purchase Price
 * Total Purchase Value
+
 ```python
 # Identify the Top 5 Spenders by Total Purchase Value and GroupBy "SN"
 
@@ -226,6 +233,7 @@ Identify the 5 most popular items by purchase count, then list (in a table):
 * Purchase Count
 * Item Price
 * Total Purchase Value
+
 ```python
 # Retrieve the Item ID, Item Name, and Item Price columns
 item_data = purchase_data[["Item ID", "Item Name", "Price"]]
@@ -263,6 +271,7 @@ Identify the 5 most profitable items by total purchase value, then list (in a ta
 * Purchase Count
 * Item Price
 * Total Purchase Value
+
 ```python
 # Sorting earlier table by "Total Purchase Value"
 item_table2 = item_table.sort_values("Total Purchase Value", ascending=False)
