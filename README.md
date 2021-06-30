@@ -5,8 +5,7 @@ After landing a job as Lead Analyst for an independent gaming company, you've be
 
 Like many others in its genre, the game is free-to-play, but players are encouraged to purchase optional items that enhance their playing experience. As a first task, the company would like you to generate a report that breaks down the game's purchasing data into meaningful insights.
 
-## Objectives
-The final report should include each of the following:
+## Analysis
 
 ### Player Count
 * Total Number of Players
